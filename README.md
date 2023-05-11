@@ -5,8 +5,8 @@ The most powerful Symfony CMS on the market.
 
 1. Why SFS Builder
 2. How to Install and Use SFS Builder
-  1. Using SFS Builder in a Clean Symfony Project
-  2. Using SFS Builder with a Sylius Project
+   1. Using SFS Builder in a Clean Symfony Project
+   2. Using SFS Builder with a Sylius Project
 3. Adding more components to it
 
 ## Why SFS Builder
