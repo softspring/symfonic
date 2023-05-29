@@ -1,0 +1,10 @@
+{
+    "name": "softspring/sfs-builder",
+    "description": "A powerful Symfony CMS",
+    "type": "library",
+    "require": {
+        "softspring/cms-bundle": "^5.1",
+        "softspring/cms-module-collection": "^5.1"
+    },
+    "license": "MIT"
+}
