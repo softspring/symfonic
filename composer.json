@@ -6,5 +6,10 @@
         "softspring/cms-bundle": "^5.1",
         "softspring/cms-module-collection": "^5.1"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "extra": {
+        "branch-alias": {
+            "dev-5.2": "5.2.x-dev"
+        }
+    }
 }
