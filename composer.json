@@ -3,6 +3,7 @@
     "description": "A powerful Symfony CMS",
     "license": "MIT",
     "type": "library",
+    "minimum-stability": "dev",
     "require": {
         "softspring/cms-bundle": "^5.2",
         "softspring/cms-module-collection": "^5.2"
