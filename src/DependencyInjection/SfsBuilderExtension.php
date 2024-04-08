@@ -1,6 +1,6 @@
 <?php
 
-namespace Softspring\SfsBuilderBundle\DependencyInjection;
+namespace Softspring\SfsBuilder\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

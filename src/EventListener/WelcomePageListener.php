@@ -1,6 +1,6 @@
 <?php
 
-namespace Softspring\SfsBuilderBundle\EventListener;
+namespace Softspring\SfsBuilder\EventListener;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Response;

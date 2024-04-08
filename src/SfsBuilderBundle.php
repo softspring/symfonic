@@ -1,6 +1,6 @@
 <?php
 
-namespace Softspring\SfsBuilderBundle;
+namespace Softspring\SfsBuilder;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
