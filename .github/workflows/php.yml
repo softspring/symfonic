@@ -1,0 +1,67 @@
+name: CI
+
+on:
+    push:
+        branches: [ 5.2 ]
+    pull_request:
+        branches: [ 5.2 ]
+
+permissions:
+    contents: read
+
+env:
+    XDEBUG_MODE: coverage
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        strategy:
+            matrix:
+                php-versions: [ '8.2', '8.3' ] # do not test 8.0 because of phpstan errors with doctrine/collections
+                composer-prefer: [ '', '--prefer-lowest' ]
+
+        steps:
+            -   uses: actions/checkout@v4
+
+            -   name: Install PHP
+                uses: shivammathur/setup-php@v2
+                with:
+                    php-version: ${{ matrix.php-versions }}
+                    #                  extensions: intl #optional
+                    ini-values: "post_max_size=256M" #optional
+
+            -   name: Check PHP Version
+                run: php -v
+
+            -   name: Validate composer.json and composer.lock
+                run: composer validate --strict
+
+            -   name: Cache Composer packages
+                id: composer-cache
+                uses: actions/cache@v4
+                with:
+                    path: vendor
+                    key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
+                    restore-keys: |
+                        ${{ runner.os }}-php-
+
+            -   name: Install dependencies
+                run: composer update --prefer-dist --no-interaction --no-progress ${{ matrix.composer-prefer }}
+
+            -   name: Run phpstan
+                run: ./vendor/bin/phpstan analyse
+
+#            -   name: Run tests
+#                run: ./vendor/bin/phpunit --coverage-text --coverage-html=.phpunit.cache/html-report
+
+            -   name: Code Style check
+                run: ./vendor/bin/php-cs-fixer fix -v --diff --dry-run
+
+#            -   name: phpunit-coverage-badge
+#                uses: timkrase/phpunit-coverage-badge@v1.2.1
+#                with:
+#                    push_badge: true
+#                    coverage_badge_path: .github/badges/coverage.svg
+#                    repo_token: ${{ secrets.GITHUB_TOKEN }}
