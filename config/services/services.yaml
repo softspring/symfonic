@@ -6,4 +6,4 @@ services:
         bind:
             $debug: '%kernel.debug%'
 
-    Softspring\CmsBundle\EventListener\WelcomePageListener: ~
+    Softspring\SfsBuilder\EventListener\WelcomePageListener: ~
