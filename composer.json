@@ -5,8 +5,19 @@
     "type": "library",
     "minimum-stability": "dev",
     "require": {
+        "php": ">=8.1",
         "softspring/cms-bundle": "^5.2",
-        "softspring/cms-module-collection": "^5.2"
+        "softspring/cms-module-collection": "^5.2",
+        "symfony/http-kernel": "^5.4|^6.0|^7.0"
     },
-    "prefer-stable": true
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "3.51.*",
+        "phpstan/phpstan": "^1.10.49"
+    },
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Softspring\\SfsBuilderBundle\\": "src"
+        }
+    }
 }
