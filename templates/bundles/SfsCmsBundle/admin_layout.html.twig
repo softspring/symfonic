@@ -1,0 +1,22 @@
+{% trans_default_domain 'sfs_cms_admin' %}
+
+{% extends ['@SfsComponents/layout/admin.html.twig', 'admin/layout.html.twig', 'base.html.twig'] %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('bundles/sfsbuilder/admin.dist.css') }}">
+{% endblock %}
+
+{% block header_javascripts %}
+    {{ parent() }}
+{% endblock %}
+
+{% block javascripts %}
+    {#{{ parent() }}#}{# do not load default bootstrap #}
+    <script src="{{ asset('bundles/sfsbuilder/admin.dist.js') }}"></script>
+{% endblock %}
+
+{% block breadcrums_content %}
+    {{ parent() }}
+    <li class="breadcrumb-item"><a href="#">{{ 'admin.global_breadcrumb'|trans }}</a></li>
+{% endblock breadcrums_content %}
