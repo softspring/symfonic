@@ -1,0 +1,31 @@
+.nav-tabs {
+  margin-bottom: 30px;
+  border-color: #ddd;
+}
+
+.nav-tabs .nav-link {
+  padding-top: 1.15rem;
+  padding-bottom: 1.15rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: #212529;
+}
+
+.nav-tabs .nav-link:hover {
+  border: none;
+  color: #007bff;
+}
+
+.nav-tabs .active {
+  font-weight: 800;
+  background-color: transparent !important;
+  color: #007bff !important;
+  border-bottom: 3px solid #007bff !important;
+}
+.nav-tabs .active-danger {
+  font-weight: 800;
+  background-color: transparent !important;
+  color: #dc3545 !important;
+  border-bottom: 3px solid #dc3545 !important;
+}
+

@@ -21,3 +21,6 @@ $grid-breakpoints: (
 @import "@softspring/cms-bundle/styles/admin-cms";
 @import "@softspring/cms-module-collection/modules";
 @import "@softspring/media-bundle/styles/media-type";
+
+@import "./styles/admin/sidebar";
+@import "./styles/admin/tabs";
