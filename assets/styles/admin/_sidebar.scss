@@ -2,6 +2,20 @@
   Sidebar Main Menu
 ------------------------------------------*/
 
+.page-container {
+  overflow-y: scroll;
+}
+#main-content {
+  &.with-sidebar {
+    display: block;
+
+    @include media-breakpoint-up(lg) {
+      width: calc(100% - 260px);
+      margin-left: 260px;
+    }
+  }
+}
+
 .page-sidebar {
   position: fixed;
   right: auto;
