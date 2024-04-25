@@ -13,7 +13,7 @@ class AddTwigNamespacesPass implements CompilerPassInterface
         $twigFilesystemLoaderDefinition = $container->getDefinition('twig.loader.native_filesystem');
 
         // register project namespaces before collections to allow overriding
-        foreach ((new Finder())->in(__DIR__ . '/../../../templates/bundles')->depth(0)->directories() as $directory) {
+        foreach ((new Finder())->in(__DIR__.'/../../../templates/bundles')->depth(0)->directories() as $directory) {
             $twigFilesystemLoaderDefinition->addMethodCall('prependPath', [$directory->getRealPath(), str_replace('Bundle', '', $directory->getBasename())]);
         }
     }

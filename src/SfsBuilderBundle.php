@@ -12,7 +12,7 @@ class SfsBuilderBundle extends Bundle
     {
         return \dirname(__DIR__);
     }
-    
+
     public function build(ContainerBuilder $container): void
     {
         $container->addCompilerPass(new AddTwigNamespacesPass());

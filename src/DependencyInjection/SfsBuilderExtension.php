@@ -2,6 +2,7 @@
 
 namespace Softspring\SfsBuilder\DependencyInjection;
 
+use Exception;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
@@ -10,7 +11,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 class SfsBuilderExtension extends Extension
 {
     /**
-     * @throws \Exception
+     * @throws Exception
      */
     public function load(array $configs, ContainerBuilder $container): void
     {
