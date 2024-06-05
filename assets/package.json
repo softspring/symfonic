@@ -1,5 +1,5 @@
 {
-    "name": "@softspring/sfs-builder",
+    "name": "@softspring/symfonic",
     "license": "MIT",
     "version": "5.2.0-dev",
     "devDependencies": {
