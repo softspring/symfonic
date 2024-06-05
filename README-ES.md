@@ -1,18 +1,18 @@
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/softspring/sfs-builder/blob/5.1/README.md)
-[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/softspring/sfs-builder/blob/5.1/README-ES.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/softspring/symfonic/blob/5.1/README.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/softspring/symfonic/blob/5.1/README-ES.md)
 
-# SFS Builder
+# Symfonic
 Un CMS potente para Symfony.
 
 ## Índice
 
-1. Por qué SFS Builder
-2. Cómo instalar y usar SFS Builder
-   1. Uso de SFS Builder en un proyecto Symfony limpio
-   2. Uso de SFS Builder con un proyecto Sylius
+1. Por qué Symfonic
+2. Cómo instalar y usar Symfonic
+   1. Uso de Symfonic en un proyecto Symfony limpio
+   2. Uso de Symfonic con un proyecto Sylius
 3. Añadiéndole más componentes
 
-## 1. Por qué SFS Builder
+## 1. Por qué Symfonic
 
 - Diseña maquetaciones con estructuras de bloques simples o complejas y reutilízalas en diferentes páginas o secciones. 
 - Crea páginas combinando módulos creados por ti mismo o utilizando los que le proporcionamos. 
@@ -20,16 +20,16 @@ Un CMS potente para Symfony.
 - Gestiona múltiples versiones de la misma página y previsualiza los cambios sin miedo a cometer errores, ¡publica la versión final cuando estés contento con ella!
 - Todo esto con una web semántica desde el primer bloque, responsive, multisite, multiidioma y preparada para SEO.
 
-## 2. Cómo instalar y utilizar SFS Builder
+## 2. Cómo instalar y utilizar Symfonic
 
-### 2.1 Usar SFS Builder en un proyecto Symfony limpio
+### 2.1 Usar Symfonic en un proyecto Symfony limpio
 
 #### Instalación de Symfony
 
 Instala Symfony siguiendo las instrucciones actuales en https://symfony.com/doc/current/setup.html
 
 ```bash
-symfony new mi-proyecto-sfs-builder --version="6.2.*" --webapp
+symfony new mi-proyecto-symfonic --version="6.2.*" --webapp
 ```
 
 #### Configuración previa
@@ -137,10 +137,10 @@ Encore
     // ...
 ```
 
-### Instalar sfs-builder
+### Instalar symfonic
 
 ```yaml
-composer require softspring/sfs-builder:^5.1@dev
+composer require softspring/symfonic:^5.1@dev
 bin/consola doctrina:migraciones:migrar -n
 ```
 

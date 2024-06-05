@@ -1,18 +1,18 @@
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/softspring/sfs-builder/blob/5.2/README.md)
-[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/softspring/sfs-builder/blob/5.2/README-ES.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/softspring/symfonic/blob/5.2/README.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/softspring/symfonic/blob/5.2/README-ES.md)
 
-# SFS Builder
+# Symfonic
 A Powerful Symfony CMS.
 
 ## Index
 
-1. Why SFS Builder
-2. How to Install and Use SFS Builder
-   1. Using SFS Builder in a Clean Symfony Project
-   2. Using SFS Builder with a Sylius Project
+1. Why Symfonic
+2. How to Install and Use Symfonic
+   1. Using Symfonic in a Clean Symfony Project
+   2. Using Symfonic with a Sylius Project
 3. Adding more components to it
 
-## 1. Why SFS Builder
+## 1. Why Symfonic
 
 - Design layouts with simple or complex block structures and reuse them on different pages or sections. 
 - Create pages by combining modules you create yourself or using the ones we provide. 
@@ -20,16 +20,16 @@ A Powerful Symfony CMS.
 - Manage multiple versions of the same page and preview the changes without fear of making mistakes, publish the final version when you are happy with it! 
 - All this with a semantic website from the first block, responsive, multi-site, multi-language and SEO ready.
 
-## 2. How to Install and Use SFS Builder
+## 2. How to Install and Use Symfonic
 
-### 2.1 Using SFS Builder in a Clean Symfony Project
+### 2.1 Using Symfonic in a Clean Symfony Project
 
 #### Installing Symfony
 
 Install Symfony following current instructions in https://symfony.com/doc/current/setup.html
 
 ```bash
-symfony new my-sfs-builder-project --version="6.2.*" --webapp
+symfony new my-symfonic-project --version="6.2.*" --webapp
 ```
 
 #### Previous configuration
@@ -137,10 +137,10 @@ Encore
     // ...
 ```
 
-### Install sfs-builder
+### Install symfonic
 
 ```yaml
-composer require softspring/sfs-builder:^5.2@dev
+composer require softspring/symfonic:^5.2@dev
 bin/console doctrine:migrations:migrate -n
 ```
 
