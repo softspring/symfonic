@@ -2,7 +2,7 @@
 
 {% block stylesheets %}
     {{ parent() }}
-    <link rel="stylesheet" href="{{ asset('bundles/sfsbuilder/admin.dist.css') }}">
+    <link rel="stylesheet" href="{{ asset('bundles/symfonic/admin.dist.css') }}">
 {% endblock %}
 
 {% block header_javascripts %}
@@ -11,5 +11,5 @@
 
 {% block javascripts %}
     {#{{ parent() }}#}{# do not load default bootstrap #}
-    <script src="{{ asset('bundles/sfsbuilder/admin.dist.js') }}"></script>
+    <script src="{{ asset('bundles/symfonic/admin.dist.js') }}"></script>
 {% endblock %}

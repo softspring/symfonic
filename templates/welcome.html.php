@@ -1,11 +1,11 @@
 <html>
 <head>
-    <title>Welcome to SfsBuilder!</title>
+    <title>Welcome to Symfonic!</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
 <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold">Welcome to SfsBuilder</h1>
+    <h1 class="display-4 fw-bold">Welcome to Symfonic</h1>
     <div class="col-lg-6 mx-auto">
         <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
