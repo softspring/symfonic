@@ -1,5 +1,5 @@
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/softspring/symfonic/blob/5.2/README.md)
-[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/softspring/symfonic/blob/5.2/README-ES.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/softspring/symfonic/blob/5.3/README.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/softspring/symfonic/blob/5.3/README-ES.md)
 
 # Symfonic
 A Powerful Symfony CMS.
@@ -100,7 +100,7 @@ In composer.json, we add the endpoints and we establish allow-contrib to true:
 ```
 
 ### TEMPORARY
-Until we release version 5.2 of the bundles we have to include (in composer.json):
+Until we release version 5.3 of the bundles we have to include (in composer.json):
 
 ```yaml
 {
@@ -140,7 +140,7 @@ Encore
 ### Install symfonic
 
 ```yaml
-composer require softspring/symfonic:^5.2@dev
+composer require softspring/symfonic:^5.3@dev
 bin/console doctrine:migrations:migrate -n
 ```
 
@@ -149,7 +149,7 @@ bin/console doctrine:migrations:migrate -n
 We install additional modules: 
 
 ```yaml
-composer require softspring/cms-module-collection:^5.2
+composer require softspring/cms-module-collection:^5.3
 ```
 
 And we compile the assets

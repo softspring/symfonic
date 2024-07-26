@@ -2,9 +2,9 @@ name: CI
 
 on:
     push:
-        branches: [ 5.2 ]
+        branches: [ 5.3 ]
     pull_request:
-        branches: [ 5.2 ]
+        branches: [ 5.3 ]
 
 permissions:
     contents: read
