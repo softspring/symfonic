@@ -6,9 +6,9 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=8.1",
-        "softspring/cms-bundle": "^5.2",
-        "softspring/cms-translation-plugin": "^5.2",
-        "softspring/cms-module-collection": "^5.2",
+        "softspring/cms-bundle": "^5.3",
+        "softspring/cms-translation-plugin": "^5.3",
+        "softspring/cms-module-collection": "^5.3",
         "symfony/http-kernel": "^5.4|^6.0|^7.0"
     },
     "require-dev": {
