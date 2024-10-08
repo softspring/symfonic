@@ -89,6 +89,14 @@ Encore
 
     // uncomment if you're having problems with a jQuery plugin
     .autoProvidejQuery()
+
+    // this won't include jQuery and React in the output bundles generated
+    // by Webpack Encore. You'll need to load those dependencies yourself
+    // (e.g with a `<script>` tag) to make the application or website work.
+    .addExternals({
+        jquery: 'jQuery',
+        bootstrap: 'bootstrap'
+    })
 ;
 
 module.exports = Encore.getWebpackConfig();
