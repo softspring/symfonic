@@ -8,7 +8,7 @@ use Symfony\Component\Finder\Finder;
 
 class AddTwigNamespacesPass implements CompilerPassInterface
 {
-    public function process(ContainerBuilder $container)
+    public function process(ContainerBuilder $container): void
     {
         $twigFilesystemLoaderDefinition = $container->getDefinition('twig.loader.native_filesystem');
 

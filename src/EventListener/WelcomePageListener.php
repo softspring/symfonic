@@ -43,7 +43,7 @@ class WelcomePageListener implements EventSubscriberInterface
     protected function createWelcomeResponse(): Response
     {
         ob_start();
-        include \dirname(__DIR__).'/../templates/welcome.html.php';
+        include dirname(__DIR__).'/../templates/welcome.html.php';
 
         return new Response(ob_get_clean(), Response::HTTP_NOT_FOUND);
     }
