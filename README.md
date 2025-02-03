@@ -2,8 +2,9 @@
 [![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/softspring/symfonic/blob/5.4/README-ES.md)
 
 # Symfonic
-A Powerful Symfony CMS.
+This system acts as a content manager thanks to which you can create and manage static pages of your website from a single place, simplifying the work process, and also the lives of developers.
 
+Symfonic was developed in response to the need for a CMS that simplifies the creation of static pages and landing pages in Symfony-based projects. This allows our technical team to focus more on innovation and customization of applications, without being tied to repetitive tasks that do not add value.
 ## Index
 
 1. Why Symfonic
