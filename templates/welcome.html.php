@@ -6,7 +6,7 @@
 <body>
 <div class="px-4 pt-5 my-5 text-center">
     <div class="col-12 col-lg-6 mx-auto text-start pb-5">
-        <h1 class="display-4 fw-bold">Welcome to Symfonic!</h1>
+        <h1 class="display-4 fw-bold">Welcome to Symfonic</h1>
         <p class="lead mb-5">Congratulations! Symfonic has been successfully installed and is ready to use.</p>
         <div class="shadow rounded bg-light p-4 mb-5">
 
