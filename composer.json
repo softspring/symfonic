@@ -1,7 +1,7 @@
 {
     "name": "softspring/symfonic",
     "description": "A powerful Symfony CMS",
-    "license": "AGPL-3.0",
+    "license": "AGPL-3.0-or-later",
     "type": "library",
     "minimum-stability": "dev",
     "require": {
